@@ -23,6 +23,8 @@ body {
     background-image: url(img/background.png);
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -31,9 +33,18 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+.container__box {
+    margin: 0 6em;
+}
+
 .container__title {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 700;
+}
+
+.container__image {
+    margin: 2em 0 3em 0;
+    width: 60%
 }
 
 .container__button {
@@ -43,6 +54,7 @@ body {
     padding: 1em;
     color: var(--main-white);
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .secondary_button {
@@ -53,4 +65,33 @@ body {
 .container__notice {
     font-size: 12px;
     color: var(--secondary-gray);
+}
+
+.secondary__image {
+    width: 80%;
+}
+
+.secondary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.description__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--main-white);
+    margin-bottom: 0.1em;
+}
+
+.description__text {
+    color: var(--secondary-gray);
+    font-size: 18px;
+}
+
+.container__description .container__button {
+    display: inline-block;
+}
+
+.container__description {
+    padding: 2em;
 }
