@@ -1,7 +1,8 @@
 :root {
     --main-white: #ffffff;
     --secondary-gray: #c0c0c0;
-    --blue-button: #167bf7;
+    --blue-button: #0760cd;
+    --blue-button-efect: #4090f3;
     --background-color: #00030c;
     --main-font: 'Inter';
 }
@@ -38,7 +39,7 @@ body {
 }
 
 .container__title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -55,6 +56,13 @@ body {
     color: var(--main-white);
     text-decoration: none;
     margin-bottom: 1em;
+}
+
+.container__button:hover {
+    background-color: var(--blue-button-efect);
+    border-color: var(--blue-button-efect);
+    color: var(--background-color);
+    transition: all 0.5s;
 }
 
 .secondary_button {
@@ -90,8 +98,62 @@ body {
 
 .container__description .container__button {
     display: inline-block;
+    margin-top: 1em;
 }
 
 .container__description {
     padding: 2em;
+}
+
+.devices {
+    text-align: center;
+}
+
+.devices__title {
+    font-size: 48px;
+    color: var(--main-white);
+}
+
+.devices__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.item__list {
+    font-size: 32px;
+    color: var(--main-white);
+}
+
+.footer {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.item__list__footer a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.item__list__footer a:hover {
+    color: var(--blue-button);
+}
+
+.item__list__footer a:active {
+    color: #ed2d50;
+}
+
+.footer__text {
+    font-size: 14px;
+    color: var(--secondary-gray);
+    margin: 2em 0;
 }
